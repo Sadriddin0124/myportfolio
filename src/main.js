@@ -9,11 +9,11 @@ import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
 import { faTelegram } from '@fortawesome/free-brands-svg-icons'
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
-import { faCode, faLanguage, faMicrochip, faMobile, faUser } from '@fortawesome/free-solid-svg-icons'
+import { faBars, faCode, faLanguage, faMicrochip, faMobile, faUser } from '@fortawesome/free-solid-svg-icons'
 import { faClock } from '@fortawesome/free-regular-svg-icons'
 // app.use(createPinia())
 // app.use(router)
-library.add(faGithub, faTelegram, faLinkedin, faCode, faClock, faMobile, faMicrochip, faUser, faLanguage)
+library.add(faGithub, faTelegram, faLinkedin, faCode, faClock, faMobile, faMicrochip, faUser, faLanguage, faBars)
 
 createApp(App)
   .component('font-awesome-icon', FontAwesomeIcon)
