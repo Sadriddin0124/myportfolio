@@ -1,8 +1,8 @@
 <template>
     <section class="w-[100%] flex justify-center items-center flex-col gap-10 px-[16px]">
         <div class="max-w-[1200px] w-[100%] flex flex-col items-center">
-            <h2 class="text-[45px] font-[500]">Services</h2>
-            <h3 class="mt-[20px] text-[35px]">What services can I provide?</h3>
+            <h2 class="text-[35px] md:text-[45px] font-[500]">Services</h2>
+            <h3 class="mt-[20px] text-[20px] md:text-[35px]">What services can I provide?</h3>
         </div>
         <div class="max-w-[1200px] mx-auto pb-[150px] w-[100%]">
             <swiper

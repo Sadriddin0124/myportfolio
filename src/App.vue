@@ -4,6 +4,7 @@
     <Hero/>
     <Services/>
     <Portfolio/>
+    <Resume/>
   </div>
 </template>
 
@@ -11,6 +12,7 @@
 import Hero from "./components/Hero.vue";
 import Navbar from "./components/Navbar.vue"
 import Portfolio from "./components/Portfolio.vue";
+import Resume from "./components/Resume.vue";
 import Services from "./components/Services.vue";
 </script>
 
