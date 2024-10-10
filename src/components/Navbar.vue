@@ -10,9 +10,12 @@
                     <a :href="item.path" class="text-[18px] ease-linear duration-150 hover:text-violet-600">{{ item?.text }}</a>
                 </li>
             </ul>
-            <button :class="active ? 'relative z-30 text-[26px] text-white ease-linear duration-500' : 'md:hidden ease-linear duration-500 text-[26px]'" @click="changeActive"><font-awesome-icon :icon="['fa', 'bars']"/></button>
+            <button :class="active ? 'relative z-30 text-[26px] text-white ease-linear duration-500' : 'md:hidden ease-linear duration-500 text-[26px]'" @click="changeActive">
+                <font-awesome-icon :icon="['fas', 'xmark']" v-if="active"/>
+                <font-awesome-icon :icon="['fa', 'bars']" v-else/>
+            </button>
             <ul :class="active ? 'fixed z-20 flex w-[100%] h-[100vh] gap-3 flex-col text-white p-4 right-0 top-0 items-center justify-center opacity-[1] ease-linear duration-500' : 'hidden opacity-0 ease-linear duration-500'">
-                <li v-for="(item,index) in links" :key="index" class="relative group">
+                <li v-for="(item,index) in links" :key="index" class="relative group" @click="changeActive">
                     <span class="absolute inline-block w-full h-[2px] bg-white bottom-[-16px] opacity-0 group-hover:bottom-0 group-hover:opacity-[1] ease-linear duration-300"></span>
                     <a :href="item.path" class="text-[28px] ease-linear duration-150 hover:text-white">{{ item?.text }}</a>
                 </li>
