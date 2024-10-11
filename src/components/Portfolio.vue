@@ -1,8 +1,8 @@
 <template>
-    <section class="w-[100%] flex justify-center px-[16px]">
+    <section id="portfolio" class="w-[100%] flex justify-center px-[16px]">
         <div class="max-w-[1200px] pb-[100px] flex flex-col items-center gap-2">
             <h2 class="text-[35px] md:text-[45px] font-[500]">My Projects</h2>
-            <p class="text-[20px] md:text-[24px] mb-[50px]">Just Click the card to see my works.</p>
+            <p class="text-[20px] md:text-[24px] mb-[50px]">Just Click the button to see my works.</p>
             <div class="grid md:grid-cols-2 gap-6">
                 <div v-for="(item,index) in data" :key="index" class="bg-white rounded-md overflow-hidden shadow-lg p-5 flex flex-col gap-3">
                     <div class="border rounded-md overflow-hidden min-h-[200px] sm:min-h-[260px]">

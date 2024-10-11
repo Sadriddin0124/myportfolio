@@ -1,5 +1,5 @@
 <template>
-    <section class="w-[100%] flex justify-center px-[16px]">
+    <section id="home" class="w-[100%] flex justify-center px-[16px]">
         <div class="max-w-[1200px] w-[100%] flex justify-between items-center lg:flex-row flex-col lg:min-h-[100vh] py-[200px] lg:py-[100px]">
             <img src="../assets/hero.jpg" alt="Hero" class="hidden lg:block w-[50%] mix-blend-multiply">
             <div class="flex flex-col gap-5">

@@ -1,5 +1,5 @@
 <template>
-    <section class="w-[100%] flex justify-center flex-col items-center py-[100px] px-[16px]">
+    <section id="resume" class="w-[100%] flex justify-center flex-col items-center py-[100px] px-[16px]">
         <div id="pdf-content" class="max-w-[1000px] hidden lg:block w-[100%] bg-white min-h-[1000px] px-[60px] pt-[20px] pb-[60px] relative">
             <h1 class="text-[35px] text-center font-[500]">Sadriddin Ravshanov</h1>
             <h5 class="text-center text-[18px]">Tashkent, Uzbekistan</h5>

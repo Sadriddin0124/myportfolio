@@ -29,10 +29,10 @@
 import { ref } from 'vue';
 
     const links = [
-        {text: "Home", path: "#home"},
+        {text: "Home", path: "/"},
         {text: "Portfolio", path: "#portfolio"},
         {text: "Resume", path: "#resume"},
-        {text: "Service", path: "#service"},
+        {text: "Services", path: "#services"},
         {text: "Contact", path: "#contact"},
     ]
     const active = ref(false)
