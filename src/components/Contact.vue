@@ -39,6 +39,7 @@
     const lastName = ref('')
     const email = ref('')
     const appeal = ref('')
+    console.log(appeal.value);
     const botToken = '7808946225:AAFjWBTokCAmVKLYICdZaSQy_ZjkBOpKlao';
     const chatId = '5575104582'
     const sendMessage = async (e) => {

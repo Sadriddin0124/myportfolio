@@ -81,11 +81,11 @@
         },
         {
             key: "State Management:",
-            value: "Zustand, Redux, Pinia(unfinished)"
+            value: "Zustand, Redux, Pinia"
         },
         {
             key: "Libraries and Frameworks:",
-            value: "All UI libraries, i18n, OAuth"
+            value: "React UI libraries, Vuetify, i18n, OAuth"
         },
         {
             key: "Version Control Systems:",
