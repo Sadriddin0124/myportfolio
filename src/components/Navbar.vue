@@ -1,7 +1,7 @@
 <template>
     <nav class="w-[100%] flex justify-center shadow-md bg-white fixed z-50 px-[16px]">
         <div class="max-w-[1200px] w-[100%] flex items-center justify-between">
-            <div class="w-[80px] h-[80px]">
+            <div class="w-[80px] h-[80px] relative z-[-1]">
                 <img src="../assets/logo.avif" alt="Logo">
             </div>
             <ul class="hidden md:flex gap-7">
@@ -27,7 +27,6 @@
 
 <script setup>
 import { ref } from 'vue';
-
     const links = [
         {text: "Home", path: "/"},
         {text: "Portfolio", path: "#portfolio"},

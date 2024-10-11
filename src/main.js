@@ -11,6 +11,8 @@ import { faTelegram } from '@fortawesome/free-brands-svg-icons'
 import { faLinkedin } from '@fortawesome/free-brands-svg-icons'
 import { faBars, faCode, faDownload, faLanguage, faMicrochip, faMobile, faUser, faXmark } from '@fortawesome/free-solid-svg-icons'
 import { faClock } from '@fortawesome/free-regular-svg-icons'
+import ToastPlugin from 'vue-toast-notification';
+import 'vue-toast-notification/dist/theme-bootstrap.css';
 // app.use(createPinia())
 // app.use(router)
 library.add(faGithub, faTelegram, faLinkedin, faCode, faClock, faMobile, faMicrochip, faUser, faLanguage, faBars, faXmark, faDownload)
@@ -18,4 +20,5 @@ library.add(faGithub, faTelegram, faLinkedin, faCode, faClock, faMobile, faMicro
 createApp(App)
   .component('font-awesome-icon', FontAwesomeIcon)
   .mount('#app')
+  .use(ToastPlugin)
 

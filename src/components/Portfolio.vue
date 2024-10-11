@@ -2,16 +2,16 @@
     <section id="portfolio" class="w-[100%] flex justify-center px-[16px]">
         <div class="max-w-[1200px] pb-[100px] flex flex-col items-center gap-2">
             <h2 class="text-[35px] md:text-[45px] font-[500]">My Projects</h2>
-            <p class="text-[20px] md:text-[24px] mb-[50px]">Just Click the button to see my works.</p>
+            <p class="text-[20px] md:text-[24px] mb-[50px] text-center">Just Click the button to see my works.</p>
             <div class="grid md:grid-cols-2 gap-6">
-                <div v-for="(item,index) in data" :key="index" class="bg-white rounded-md overflow-hidden shadow-lg p-5 flex flex-col gap-3">
-                    <div class="border rounded-md overflow-hidden min-h-[200px] sm:min-h-[260px]">
+                <div v-for="(item,index) in data" :key="index" class="bg-white rounded-md overflow-hidden shadow-lg flex flex-col gap-3">
+                    <div class="border rounded-t-md overflow-hidden min-h-[200px] sm:min-h-[260px]">
                         <img :src="item?.img" :alt="item?.title" class="object-cover scale-[1.03] h-[100%] w-[100%]">
                     </div>
-                    <div class="flex flex-col justify-between h-[100%] gap-3">
+                    <div class="flex flex-col justify-between h-[100%] gap-3 px-5 pb-5">
                         <div class="flex flex-col gap-2 items-start">
                             <h3 class="text-[22px] font-[500]">{{ item?.title }}</h3>
-                            <p class="text-[17px] text-gray-400">{{ item?.desc }}</p>
+                            <p class="text-[17px] text-gray-400 leading-5 sm:leading-7">{{ item?.desc }}</p>
                         </div>
                         <a :href="item?.link" target="blank" class="px-5 py-2 bg-violet-600 text-white rounded-md self-start">Open website</a>
                     </div>

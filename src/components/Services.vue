@@ -26,11 +26,9 @@
                     },
                 }"
                 :autoplay="{ delay: 5000, disableOnInteraction: false }"
-                @swiper="onSwiper"
-                @slideChange="onSlideChange"
             >
                 <swiper-slide v-for="(item,index) in data" :key="index">
-                    <div class="py-8 px-10 h-[320px] flex flex-col gap-3 rounded-lg items-center bg-white text-black ease-linear duration-200 hover:bg-violet-600 cursor-pointer group">
+                    <div class="py-8 px-10 h-[350px] flex flex-col gap-3 rounded-lg items-center bg-white text-black ease-linear duration-200 hover:bg-violet-600 cursor-pointer group">
                         <font-awesome-icon :icon="item?.icon" class="text-[50px] text-violet-600 group-hover:text-white ease-linear duration-200"/>
                         <h3 class="text-[24px] font-[500] text-center group-hover:text-white ease-linear duration-200">{{ item?.title }}</h3>
                         <p class="text-[16px] text-center group-hover:text-white ease-linear duration-200">{{ item?.desc }}</p>
@@ -49,15 +47,6 @@
     import 'swiper/css/navigation'
     import 'swiper/css/pagination'
     import 'swiper/css/scrollbar'
-
-    const onSwiper = (swiper) => {
-    console.log(swiper)
-    }
-
-    const onSlideChange = () => {
-    console.log('slide change')
-    }
-
     const modules = ref([Navigation, Pagination, Scrollbar, A11y, Autoplay])
     const data = [
         {

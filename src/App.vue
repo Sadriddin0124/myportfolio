@@ -5,10 +5,14 @@
     <Services/>
     <Portfolio/>
     <Resume/>
+    <Contact/>
+    <FooterSection/>
   </div>
 </template>
 
 <script setup>
+import Contact from "./components/Contact.vue";
+import FooterSection from "./components/FooterSection.vue";
 import Hero from "./components/Hero.vue";
 import Navbar from "./components/Navbar.vue"
 import Portfolio from "./components/Portfolio.vue";
